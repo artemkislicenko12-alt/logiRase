@@ -1,0 +1,528 @@
+
+.hero-container {
+    text-align: center;
+    padding: 60px 20px;
+    background: radial-gradient(circle, rgba(255,69,0,0.1) 0%, rgba(0,0,0,0) 70%);
+}
+
+.pro-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Маленький текст зверху */
+.top-line {
+    font-size: 14px;
+    letter-spacing: 12px;
+    color: #ff4500;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Головна назва */
+.main-name {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: -2px; /* Букви трохи ближче для стилю */
+    line-height: 0.9;
+    background: linear-gradient(180deg, #fff 0%, #888 100%); /* Градієнт на тексті */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
+}
+
+h1{
+    color: orange;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 15px;
+    background-color: red;
+}
+body{
+    background-image: url('photo_2026-05-01_18-37-58.jpg');
+    background-size: cover; 
+
+    /* 2. Це зафіксує картинку, щоб вона не прокручувалася разом з текстом */
+    background-attachment: fixed; 
+
+    /* 3. Це на випадок, якщо картинка довго вантажиться, фон буде чорним, а не білим */
+    background-color: black; 
+    
+    /* Також важливо додати це, щоб фон займав мінімум всю висоту екрану */
+    min-height: 100vh;
+    margin: 0;
+}
+
+p{
+    text-shadow: 2px 2px 5px black;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+     padding: 30px;
+}
+ul{
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: 19px;
+    text-align: center;
+}
+
+
+
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+
+
+.btn {
+  background: orange;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+
+.equipment-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px; /* Відстань між картками */
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон */
+    border: 2px solid #ff4500; /* Оранжева рамка (колір Марса) */
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    transition: 0.3s; /* Плавний ефект при наведенні */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Картка трохи збільшується при наведенні */
+    background: rgba(255, 69, 0, 0.2); /* Змінює колір фону */
+}
+
+.card h3 {
+    color: #ff4500;
+    margin-bottom: 15px;
+}
+header {
+    background: rgba(0, 0, 0, 0.8); /* Темна плашка зверху */
+    padding: 15px 50px;
+    position: sticky; /* Меню буде "прилипати" до верху при гортанні */
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4500;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /* Прибираємо крапки біля списку */
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Прибираємо підкреслення посилань */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4500; /* Колір змінюється при наведенні */
+}
+
+
+.facts-section {
+    padding: 60px 20px;
+    background: rgba(255, 69, 0, 0.05); /* Легкий оранжевий відтінок для фону секції */
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #ff4500;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.hero {
+    padding: 20px;
+    display: flex;
+    min-height: 70vh;
+    justify-content: space-evenly;
+    align-items: center;
+    color: yellow;
+    
+}
+img{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Робимо сітку 2 на 2 */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fact-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-left: 5px solid #ff4500; /* Оранжева лінія збоку */
+    transition: 0.4s;
+}
+
+.fact-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px); /* Ефект зсуву вбік при наведенні */
+}
+
+.fact-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.fact-item h4 {
+    color: #ffcc00;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.fact-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.facts-section {
+    padding: 60px 20px;
+    background: rgba(255, 69, 0, 0.05); /* Легкий оранжевий відтінок для фону секції */
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #ff4500;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Робимо сітку 2 на 2 */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fact-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-left: 5px solid #ff4500; /* Оранжева лінія збоку */
+    transition: 0.4s;
+}
+
+.fact-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px); /* Ефект зсуву вбік при наведенні */
+}
+
+.fact-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.fact-item h4 {
+    color: #ffcc00;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.fact-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.timeline-section {
+    padding: 80px 20px;
+    margin-top: 40px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Створюємо лінію, що з'єднує етапи */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #ff4500;
+    z-index: 1;
+}
+
+.timeline-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Щоб блоки були над лінією */
+    border: 1px solid #ff4500;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-10px); /* Блок піднімається при наведенні */
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.4);
+}
+
+.year {
+    background: #ff4500;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.timeline-item h4 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.space-window-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.window-frame {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    border: 15px solid #333; /* Рама ілюмінатора */
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden; /* Щоб картинка не виходила за межі рами */
+    box-shadow: 0 0 50px rgba(0,0,0,1), inset 0 0 50px rgba(0,0,0,0.8);
+}
+
+.mars-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%; /* Робимо картинку більшою для ефекту руху */
+    height: 100%;
+    background-image: url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663509938097/DWNKIEzHfcWKHFgM.png');
+    background-size: cover;
+    transition: 5s linear; /* Плавний рух */
+}
+
+/* Ефект руху при наведенні */
+.window-frame:hover .mars-view {
+    transform: translateX(-15%);
+}
+
+.glass-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 50%, rgba(0, 255, 255, 0.1) 100%);
+    pointer-events: none; /* Щоб мишка проходила крізь цей шар */
+}
+
+/* Лінія сканера */
+.scanner-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 15px cyan;
+    top: -10%;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.window-frame:hover .scanner-line {
+    opacity: 1;
+    animation: scan 2s infinite linear;
+}
+
+ scan {
+    0% { top: 0%; }
+    100% { top: 100%; }
+}
+
+.hud-data {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: cyan;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: 14px;
+    text-shadow: 0 0 5px cyan;
+    opacity: 0.5;
+}
+
+.instruction {
+    margin-top: 20px;
+    color: #ffcc00;
+    font-style: italic;
+}
+/* Загальні налаштування для всього верху */
+.pro-header {
+    width: 100%;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Верхня панель статусу */
+.status-bar {
+    background: #ff4500; /* Яскравий марсіанський колір */
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.status-active {
+    animation: blink 1s infinite; /* Ефект миготіння статусу */
+}
+
+ blink {
+    50% { opacity: 0; }
+}
+
+/* Основне меню */
+.pro-nav {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(15px); /* Розмиття фону */
+    border-bottom: 1px solid rgba(255, 69, 0, 0.5);
+    padding: 20px 0;
+}
+
+.pro-nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Логотип у стилі коду */
+.pro-logo {
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.pro-logo span {
+    color: #ff4500;
+}
+
+/* Меню */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+}
+
+.nav-menu a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ff4500;
+    text-shadow: 0 0 10px #ff4500;
+}
+
+/* Кнопка ЗАПУСК */
+.launch-btn {
+    border: 1px solid #ff4500;
+    color: #ff4500;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.4s;
+}
+
+.launch-btn:hover {
+    background: #ff4500;
+    color: black;
+    box-shadow: 0 0 20px #ff4500;
+}
+
+
+
+
+
+
